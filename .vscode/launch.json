@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C#: API Debug (Launch)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/API/bin/Debug/net8.0/API.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/API",
+            "stopAtEntry": false,
+            "env": {
+                "DOTNET_ENVIRONMENT": "Development"
+            },
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "requireExactSource": false
+        },
+        {
+            "name": "C#: API Debug (Attach)",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
